@@ -1,0 +1,437 @@
+
+
+.back {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 19;
+}
+
+.container_log_in {
+  position: absolute;
+  box-shadow: 0px 18px 35px 0px rgba(0, 0, 0, 0.29), 0px 6px 10px 0px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-width: 300px;
+  width: 345px;
+  margin: 50px auto;
+  border: 4px solid #15171e;
+  border-radius: 16px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.title {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 5;
+}
+
+.main-title {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  color: #15171e;
+  font-size: 75px;
+  text-align: center;
+  text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none;
+}
+
+.exit {
+  position: absolute;
+  transform: translate(148px, -50px);
+  font-size: 24px;
+  color: #15171e;
+  opacity: 0.45;
+  transition: 0.3s;
+}
+
+.exit:hover {
+  opacity: 1;
+}
+
+.brand {
+  margin: 0;
+}
+
+.p {
+  color: #3d5fdb;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form_form {
+  padding-top: 0px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.form_all {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+label {
+  padding-top: 21px;
+  font-size: 15px;
+}
+
+input {
+  padding: 6px 8px;
+  font-size: 15px;
+  border-radius: 4px;
+  box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.21), inset 0px 0px 0px 1px #ececec;
+  background: #FFFFFF;
+  border: 0;
+}
+
+input:focus {
+  border-radius: 4px;
+  outline-style: none;
+  border: 1px solid rgba(61, 95, 219, 1);
+  padding: 5px 7px;
+}
+
+.acepto_cont {
+  margin-top: 18px;
+}
+
+/* Customize the label (the container) */
+.check_container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  padding-top: 1px;
+  cursor: pointer;
+  font-size: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.check_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #d0d5e2;
+}
+
+/* On mouse-over, add a grey background color */
+.check_container:hover input ~ .checkmark {
+  background-color: #525766;
+}
+
+/* When the checkbox is checked, add a blue background */
+.check_container input:checked ~ .checkmark {
+  background-color: rgba(61, 95, 219, 1);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.check_container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.check_container .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 4px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.forg {
+  margin-top: 13px;
+}
+
+.send {
+  width: 120px;
+  font-size: 20px;
+  color: rgb(61, 95, 219);
+  padding: 5px 12px;
+  border-radius: 60px;
+  background-color: rgba(255, 0, 0, 0);
+  border: 1.2px solid rgb(61, 95, 219);
+  font-family: 'Montserrat';
+  font-weight: 400;
+  transition: .3s;
+  margin: 25px;
+  margin-bottom: 0;
+}
+
+.send:hover {
+  background-color: rgba(61, 95, 219, 0.15);
+}
+
+.log-link {
+  color: rgb(61, 95, 219);
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  border-bottom: 1.2px solid rgba(61, 95, 219, 0);
+  transition: .3s;
+  margin-bottom: 14px;
+}
+
+.log-link:hover {
+  border-bottom: 1.2px solid rgba(61, 95, 219, 1);
+}
+
+@media (min-width: 768px) {
+  
+}
+
+@media (min-width: 1600px) {
+  .container_log_in {
+    position: absolute;
+    box-shadow: 0px 18px 35px 0px rgba(0, 0, 0, 0.29), 0px 6px 10px 0px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-width: 300px;
+    width: 445px;
+    margin: 50px auto;
+    border: 4px solid #15171e;
+    border-radius: 16px;
+    overflow: hidden;
+    z-index: 20;
+  }
+  
+  .title {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 5;
+  }
+  
+  .main-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: #15171e;
+    font-size: 85px;
+    text-align: center;
+    text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .p {
+    color: #3d5fdb;
+  }
+  
+  .form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .form_form {
+    padding-top: 28px;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+  }
+  
+  .form_all {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  label {
+    padding-top: 26px;
+    font-size: 18px;
+  }
+  
+  input {
+    padding: 8px 10px;
+    font-size: 18px;
+    border-radius: 4px;
+    box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.21), inset 0px 0px 0px 1px #ececec;
+    background: #FFFFFF;
+    border: 0;
+  }
+  
+  input:focus {
+    border-radius: 4px;
+    outline-style: none;
+    border: 1px solid rgba(61, 95, 219, 1);
+    padding: 7px 9px;
+  }
+  
+  .acepto_cont {
+    margin-top: 26px;
+  }
+  
+  /* Customize the label (the container) */
+  .check_container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    padding-top: 2px;
+    cursor: pointer;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .check_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #d0d5e2;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .check_container:hover input ~ .checkmark {
+    background-color: #525766;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .check_container input:checked ~ .checkmark {
+    background-color: rgba(61, 95, 219, 1);
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .check_container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .check_container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 4px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .forg {
+    margin-top: 13px;
+  }
+  
+  .send {
+    width: 130px;
+    font-size: 22px;
+    color: rgb(61, 95, 219);
+    padding: 5px 12px;
+    border-radius: 60px;
+    background-color: rgba(255, 0, 0, 0);
+    border: 1.2px solid rgb(61, 95, 219);
+    font-family: 'Montserrat';
+    font-weight: 400;
+    transition: .3s;
+    margin: 45px;
+    margin-bottom: 0;
+  }
+  
+  .send:hover {
+    background-color: rgba(61, 95, 219, 0.15);
+  }
+  
+  .log-link {
+    color: rgb(61, 95, 219);
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 13px;
+    border-bottom: 1.2px solid rgba(61, 95, 219, 0);
+    transition: .3s;
+    margin-bottom: 14px;
+  }
+  
+  .log-link:hover {
+    border-bottom: 1.2px solid rgba(61, 95, 219, 1);
+  }
+}

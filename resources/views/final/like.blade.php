@@ -1,0 +1,1 @@
+{{dd($build, $user_liked, $id)}}

@@ -1,0 +1,382 @@
+.total_background { 
+  background: url("../imagenes/JustLogo_thicc_900.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-size: 95vh;
+  filter: blur(1px) opacity(30%);
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  transform: translateY(44px);
+}
+
+.main_settings {
+  width: 100%;
+  margin: 95px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 0 0 30px;
+  color: #15171e;
+}
+
+.main_settings2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.title_settings {
+  font-size: 65px;
+  margin: 30px 0;
+}
+
+.username_settings {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 400px;
+  padding: 16px;
+  border: 2px solid rgba(21, 23, 30, 0.25);
+  border-radius: 4px;
+}
+
+.username_settings h3 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.username_settings div {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.username_settings label {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.username_settings input {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.username_settings .change {
+  width: 68px;
+}
+
+.logo_back {
+  flex: 1;
+  background-image: url("../imagenes/JustLogo_thicc_900.jpg");
+  background-size: 95vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(1px) opacity(30%);
+  z-index: -1;
+}
+
+.all_builds {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+@media (min-width: 480px) {
+  .main_settings {
+    margin: 72px 0;
+    padding: 0 0 0 65px;
+  }
+
+  .title_settings {
+    font-size: 50px;
+    margin: 30px 0;
+  }
+  
+  .username_settings {
+    width: 400px;
+    padding: 16px;
+  }
+
+  .username_settings .change {
+    width: 78px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main_settings {
+    margin: 95px 0;
+    padding: 0 0 0 65px;
+  }
+  
+  .title_settings {
+    font-size: 65px;
+    margin: 30px 0;
+  }
+  
+  .username_settings {
+    width: 450px;
+    padding: 16px;
+  }
+
+  .username_settings .change {
+    width: 90px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main_settings {
+    margin: 95px 0;
+    padding: 0 0 0 65px;
+  }
+  
+  .title_settings {
+    font-size: 65px;
+    margin: 30px 0;
+  }
+  
+  .username_settings {
+    width: 450px;
+    padding: 16px;
+  }
+
+  .username_settings .change {
+    width: 90px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .main_settings {
+    margin: 106px 0;
+    padding: 0 0 0 65px;
+  }
+  
+  .title_settings {
+    font-size: 65px;
+    margin: 30px 0;
+  }
+  
+  .username_settings {
+    width: 450px;
+    padding: 16px;
+  }
+
+  .username_settings .change {
+    width: 90px;
+  }
+}
+
+
+/*-------------------------------------CARD-------------------------------------*/
+
+
+.comodin {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.generic_cont1 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-radius: 4px;
+}
+
+.build_card { white-space: normal;
+  position: relative;
+  width: 168px;
+  background-color: #15171e;
+  border-radius: 8px;
+  border: 2px solid #eaecf2;
+  color: #eaecf2;
+  /*overflow: hidden;*/
+  box-shadow: 0 0 0 4px #15171e, 10px 10px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.build_card h3 {
+  background-color: #eaecf2;
+  color: #15171e;
+  font-size: 16px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+
+.build_name {
+  position: absolute;
+  top: 52px;
+  margin: 0 10px;
+  width: 375px;
+}
+
+.build_card .specifications {
+  padding: 10px;
+  margin-bottom: 0;
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.build_card ul {
+  margin-top: 0;
+  padding-right: 10px;
+  padding-left: 25px;
+}
+
+.build_card ul li {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.build_card ul li div {
+  font-weight: 400;
+  font-size: 10px;
+  padding: 4px;
+  padding-bottom: 8px;
+}
+
+#invento {
+  width: 1px;
+}
+
+.duda_ram {
+  width: 348px;
+  position: absolute;
+  background-color: white;
+  display: none;
+  border-radius: 8px;
+  border: 3px solid #15171e;
+  box-shadow: 0px 0px 0px 3px white, 0px 0px 8px 4px rgba(0, 0, 0, .25);
+  transform: translate(115px, -37px);
+  z-index: 1;
+}
+
+.duda_ram p {
+  text-align: center;
+  color: #15171e;
+  font-weight: 500;
+  margin: 10px 0px;
+}
+
+.bubble_arrow {
+  width: 0;
+  height: 0;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+  border-right: 14px solid white;
+  position: absolute;
+  transform: translate(-20px, -61px);
+}
+
+@media (min-width: 542px){
+  #invento {
+    width: 2px;
+  }
+}
+
+@media (min-width: 768px) {
+  .generic_cont1 {
+
+  }
+
+  .build_card { white-space: normal;
+    width: 290px;
+    margin: 14px;
+  }
+
+  .build_card h3 {
+    font-size: 25px;
+    padding-bottom: 28px;
+  }
+
+  .build_card .specifications {
+    font-size: 20px;
+  }
+
+  .build_card ul {
+    padding-left: 30px;
+  }
+
+  .build_card ul li {
+    font-size: 16px;
+  }
+
+  .build_card ul li div {
+    font-size: 14px;
+    padding: 2px;
+    padding-bottom: 4px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .build_card { white-space: normal;
+    width: 400px;
+    margin: 14px;
+  }
+
+  .build_card h3 {
+    font-size: 30px;
+    padding-bottom: 60px;
+  }
+
+  .build_card .specifications {
+    font-size: 25px;
+  }
+
+  .build_card ul {
+    padding-left: 30px;
+  }
+
+  .build_card ul li {
+    font-size: 20px;
+  }
+
+  .build_card ul li div {
+    font-size: 18px;
+    padding: 4px;
+    padding-bottom: 8px;
+  }
+}
+
+/*@media (min-width: 2148px) {
+  .build_card { white-space: normal;
+    width: 260px;
+    height: 340px;
+    margin: 25px;
+  }
+
+  .build_card h3 {
+    font-size: 22px;
+  }
+
+  .build_card .specifications {
+    font-size: 20px;
+  }
+
+  .build_card ul {
+    padding-left: 30px;
+  }
+
+  .build_card ul li {
+    font-size: 18px;
+  }
+
+  .build_card ul li div {
+    font-size: 16px;
+  }
+}*/

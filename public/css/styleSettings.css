@@ -1,0 +1,152 @@
+.main_settings {
+  width: 100%;
+  margin: 95px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 0 0 30px;
+  color: #15171e;
+}
+
+.main_settings2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.title_settings {
+  font-size: 65px;
+  margin: 30px 0;
+}
+
+.username_settings {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 400px;
+  padding: 16px;
+  border: 2px solid rgba(21, 23, 30, 0.25);
+  border-radius: 4px;
+}
+
+.username_settings h3 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.username_settings div {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.username_settings label {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.username_settings input {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.username_settings #send {
+  width: 68px;
+}
+
+.logo_back {
+  flex: 1;
+  background-image: url("../imagenes/JustLogo_thicc_900.jpg");
+  background-size: 95vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(1px) opacity(30%);
+  z-index: -1;
+}
+
+@media (min-width: 480px) {
+  .main_settings {
+    margin: 72px 0;
+    padding: 0 0 0 65px;
+  }
+
+  .title_settings {
+    font-size: 50px;
+    margin: 30px 0;
+  }
+  
+  .username_settings {
+    width: 400px;
+    padding: 16px;
+  }
+
+  .username_settings #send {
+    width: 78px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main_settings {
+    margin: 95px 0;
+    padding: 0 0 0 65px;
+  }
+  
+  .title_settings {
+    font-size: 65px;
+    margin: 30px 0;
+  }
+  
+  .username_settings {
+    width: 450px;
+    padding: 16px;
+  }
+
+  .username_settings #send {
+    width: 90px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main_settings {
+    margin: 95px 0;
+    padding: 0 0 0 65px;
+  }
+  
+  .title_settings {
+    font-size: 65px;
+    margin: 30px 0;
+  }
+  
+  .username_settings {
+    width: 450px;
+    padding: 16px;
+  }
+
+  .username_settings #send {
+    width: 90px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .main_settings {
+    margin: 106px 0;
+    padding: 0 0 0 65px;
+  }
+  
+  .title_settings {
+    font-size: 65px;
+    margin: 30px 0;
+  }
+  
+  .username_settings {
+    width: 450px;
+    padding: 16px;
+  }
+
+  .username_settings #send {
+    width: 90px;
+  }
+}
